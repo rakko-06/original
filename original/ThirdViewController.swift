@@ -21,44 +21,69 @@ class ThirdViewController: UIViewController {
     }
     
     @IBAction func button1() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face4.png"
-        self.present(nextVC, animated: true, completion: nil)
-        //self.present(1,animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face4.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+//        self.present(1,animated: true, completion: nil)
     }
     
     @IBAction func button2() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face3.png"
-        self.present(nextVC, animated: true, completion: nil)
-        //self.present(2,animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face3.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+        
+//        self.present(2,animated: true, completion: nil)
     }
     
     @IBAction func button3() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face1.png"
-        self.present(nextVC, animated: true, completion: nil)
-        //self.present(3,animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face1.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+//        self.present(3,animated: true, completion: nil)
     }
     
     @IBAction func button4() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face5.png"
-        self.present(nextVC, animated: true, completion: nil)
-        //self.present(4,animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face5.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+//        self.present(4,animated: true, completion: nil)
     }
     
     @IBAction func button5() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face2.png"
-        self.present(nextVC, animated: true, completion: nil)
-        //self.present(5,animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face2.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.dismiss(animated: true, completion: nil)
+//        self.present(5,animated: true, completion: nil)
     }
     
     @IBAction func butto6() {
-        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView")as! SecoundViewController
-        nextVC.name = "face6.png"
-        self.present(nextVC, animated: true, completion: nil)
+//        let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "presentView") as! SecoundViewController
+        let preVC = self.presentingViewController as! SecoundViewController
+        
+        preVC.name = "face6.png"
+        print(preVC.name!)
+        self.dismiss(animated: true, completion: nil)
+//        self.navigationController?.present(nextVC, animated: true)
     }
     
     @IBAction func back() {
