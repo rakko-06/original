@@ -23,7 +23,7 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
     var name: String!
     var testText:String = "default"
     
-
+    var selected_date: String!
     
     let userDefaults = UserDefaults.standard
     
@@ -50,10 +50,13 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
     @IBAction func save() {
         let title = textField.text!
         let content = TextView.text!
-        let image = imageview2!
-        userDefaults.set(title, forKey: "title")
-        userDefaults.set(content, forKey: "content")
-        userDefaults.set(image, forKey: "image")
+        let dictionary:[String:String] = ["title": title, "content": content]
+//        let image = imageview2!
+//        userDefaults.set(title, forKey: "title")
+//        userDefaults.set(content, forKey: "content")
+//        userDefaults.set(image, forKey: "image")
+        
+        userDefaults.set(dictionary, forKey: selected_date)
     }
 
 
@@ -67,6 +70,8 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(selected_date!)
 
         // Do any additional setup after loading the view.
         if name != nil {
@@ -90,6 +95,10 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
             print(name!)
         }
 //        print(name ?? <#default value#>)
+        
+        let dictionary = userDefaults.object(forKey: selected_date)!
+        print(dictionary)
+        
         
     }
         
