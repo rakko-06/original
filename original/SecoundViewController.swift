@@ -50,7 +50,9 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
     @IBAction func save() {
         let title = textField.text!
         let content = TextView.text!
-        let dictionary:[String:String] = ["title": title, "content": content]
+        let data = imageview2.image?.pngData() as NSData?
+        let dictionary:Dictionary<String,Any> = ["title": title, "content": content, "facenumber": name!, "imageview2": data]
+        
 //        let image = imageview2!
 //        userDefaults.set(title, forKey: "title")
 //        userDefaults.set(content, forKey: "content")
@@ -92,13 +94,22 @@ class SecoundViewController: UIViewController, UINavigationControllerDelegate, U
         super.viewDidAppear(animated)
         if name != nil {
             imageview.image = UIImage(named: name!)!
-            print(name!)
+//            print(name!)
         }
 //        print(name ?? <#default value#>)
         
-        let dictionary = userDefaults.object(forKey: selected_date)!
-        print(dictionary)
-        
+        if userDefaults.dictionary(forKey: selected_date) != nil{
+            let dictionary = userDefaults.dictionary(forKey: selected_date)!
+            print(dictionary)
+            
+            textField.text = dictionary["title"]! as! String
+            TextView.text = dictionary["content"]! as! String
+//            imageview.image = dictionary["name"]! as! UIImage
+            if dictionary["facenumber"] != nil {
+                imageview.image = UIImage(named: dictionary["facenumber"] as! String)
+//                print(name!)
+            }
+        }
         
     }
         

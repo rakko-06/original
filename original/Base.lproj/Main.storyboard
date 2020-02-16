@@ -15,16 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp8-wj-qBk">
-                                <rect key="frame" x="137" y="567" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.26385214439999999" green="0.44689607450000002" blue="0.64197221280000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                <color key="tintColor" red="0.97438174486160278" green="0.98506194353103638" blue="0.9627649188041687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="＋">
-                                    <color key="titleColor" red="0.97438174486160278" green="0.98506194353103638" blue="0.9627649188041687" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfG-Ci-z6A" customClass="FSCalendar">
                                 <rect key="frame" x="0.0" y="20" width="375" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
